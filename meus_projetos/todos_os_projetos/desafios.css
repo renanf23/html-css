@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'tecno';
+    src: url(../todos_os_projetos/fontes/Seven\ Segment.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor0: rgb(3, 255, 74);
+}
+
+body{
+    background-image: url('../todos_os_projetos/imagens/ceu-estrelado.png');
+}
+
+nav{
+    padding: 10px;
+    text-align: right;
+}
+
+nav > a{
+    text-decoration: none;
+    color: var(--cor0);
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px;
+    transition-duration: 0.7s;
+    font-family: 'tecno';
+}
+
+nav > a:hover{
+    color: white;
+    background-color: var(--cor0);
+}
+
+main{
+   
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.janelas{
+    background-color: var(--cor0);
+    height: 200px;
+    width: 300px;
+    margin: 15px;
+    display: inline-block;
+    border-radius: 110px;
+}
+
+article > h2{
+    text-align: center;
+    font-family: 'tecno';
+    padding-top: 10px;
+}
+
+article > p{
+    background-color: white;
+    width: 150px;
+    height: 80px;
+    margin: auto;
+    padding-top:20px ;
+    font-family: 'tecno';
+    border-radius: 20px;
+}
+article > h3  {
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    background-image: url('../todos_os_projetos/imagens/ceu-estrelado.png');
+    width:90px;
+    height: 27px;
+    padding-top: 8px;
+    border-radius: 5px;
+    color: var(--cor0);
+    transition-duration: 0.7s;
+    font-family: 'tecno';
+}
+article > h3 > a{
+    text-decoration: none;
+    color: var(--cor0);
+}
+
+article> h3:hover{
+    width:110px;
+    height: 32px;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 1.4em;

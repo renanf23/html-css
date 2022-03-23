@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 @font-face {
     font-family: 'tecno';
     src: url(../fontes/Seven\ Segment.ttf);
@@ -17,22 +16,7 @@
 body{
     background-image: url('../imagens/ceu-estrelado.png');
 }
-header{
-    min-height: 150px;
-    text-align: center;
-    padding-top: 30px;
-}
 
-header > h1{
-    color: var(--cor0);
-    padding: 10px;
-    font-family: 'tecno';
-}
-
-header > p{
-    color: var(--cor0);
-
-}
 nav{
     padding: 10px;
     text-align: right;
@@ -53,6 +37,23 @@ nav > a:hover{
     background-color: var(--cor0);
 }
 
+header{
+    min-height: 150px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+header > h1{
+    color: var(--cor0);
+    padding: 10px;
+    font-family: 'tecno';
+}
+
+header > p{
+    color: var(--cor0);
+
+}
+
 main{
    
     min-width: 300px;
@@ -62,12 +63,12 @@ main{
     padding: 10px;
 }
 .janelas{
-    background-color: lightgray;
+    background-color: var(--cor0);
     height: 300px;
     width: 300px;
     margin: 15px;
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 75px;
     
 }
 
