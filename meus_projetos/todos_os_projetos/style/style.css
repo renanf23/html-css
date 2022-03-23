@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 @font-face {
     font-family: 'tecno';
     src: url(../fontes/Seven\ Segment.ttf);
@@ -13,9 +14,10 @@
 :root{
     --cor0: rgb(3, 255, 74);
 }
-
+body{
+    background-image: url('../imagens/ceu-estrelado.png');
+}
 header{
-    background-color: black     ;
     min-height: 150px;
     text-align: center;
     padding-top: 30px;
@@ -32,7 +34,6 @@ header > p{
 
 }
 nav{
-    background-color: black;
     padding: 10px;
 }
 
