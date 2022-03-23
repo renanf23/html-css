@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'tecno';
+    src: url(../fontes/Seven\ Segment.ttf);
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -19,6 +24,7 @@ header{
 header > h1{
     color: var(--cor0);
     padding: 10px;
+    font-family: 'tecno';
 }
 
 header > p{
@@ -38,6 +44,7 @@ nav > a{
     border-radius: 5px;
     padding: 8px;
     transition-duration: 0.7s;
+    font-family: 'tecno';
 }
 
 nav > a:hover{
@@ -86,6 +93,7 @@ article > h3  {
     border-radius: 5px;
     color: var(--cor0);
     transition-duration: 1s;
+    font-family: 'tecno';
 }
 article > h3 > a{
     text-decoration: none;
