@@ -37,25 +37,66 @@ nav > a{
     font-weight: bold;
     border-radius: 5px;
     padding: 8px;
+    transition-duration: 0.7s;
 }
 
 nav > a:hover{
-    color: black;
+    color: white;
     background-color: var(--cor0);
 }
 
 main{
-    background-color: red;
+   
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
     margin-bottom: 30px;
+    padding: 10px;
 }
 .janelas{
-    background-color: aqua;
+    background-color: lightgray;
     height: 300px;
     width: 300px;
-    margin: 10px;
+    margin: 15px;
     display: inline-block;
+    border-radius: 10px;
     
 }
+
+article > h2{
+    text-align: center;
+}
+
+article > img {
+    
+
+    margin-left: 25px;
+    height: 200px;
+    width: 250px;
+}
+
+article > h3  {
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    background-color: black;
+    width:90px;
+    height: 27px;
+    padding-top: 4px;
+    border-radius: 5px;
+    color: var(--cor0);
+    transition-duration: 1s;
+}
+article > h3 > a{
+    text-decoration: none;
+    color: var(--cor0);
+}
+
+article> h3:hover{
+    width:110px;
+    height: 32px;
+    margin-top: 10px;
+    padding-top: 7px;
+    font-size: 1.4em;
+}
+
