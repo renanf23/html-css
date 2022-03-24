@@ -71,7 +71,7 @@ article > p{
     font-family: 'tecno';
     border-radius: 20px;
 }
-article > h3  {
+article > a > h3  {
     margin: auto;
     margin-top: 15px;
     text-align: center;
@@ -84,12 +84,12 @@ article > h3  {
     transition-duration: 0.7s;
     font-family: 'tecno';
 }
-article > h3 > a{
+article > a{
     text-decoration: none;
     color: var(--cor0);
 }
 
-article> h3:hover{
+article > a > h3:hover{
     width:110px;
     height: 32px;
     margin-top: 10px;
