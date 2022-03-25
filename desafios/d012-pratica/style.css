@@ -70,7 +70,9 @@ main> section#s2 > article{
     min-width: 200px;
     min-height: 475px;
 }
-
+main > section#s3 {
+    margin-bottom: 200px;
+}
 main > section#s3 > article > p{
     padding-top: 70px;
 }
