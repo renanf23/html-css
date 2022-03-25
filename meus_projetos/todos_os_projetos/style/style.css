@@ -79,11 +79,9 @@ article > h2{
 }
 
 article > img {
-    
-
-    margin-left: 25px;
-    height: 200px;
-    width: 250px;
+    display: block;
+    margin: auto;
+    width: 85%;
 }
 
 article > a >  h3  {
