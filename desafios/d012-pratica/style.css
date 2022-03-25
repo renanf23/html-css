@@ -26,6 +26,8 @@ header > h1{
     font-size: 5em;
     text-align: center;
     padding-top: 10px;
+    font-variant: small-caps;
+
 }
 header > p{
     position: relative;
