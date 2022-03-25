@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+
+body{
+    color: black;
+    margin: 0px;
+}
+
+header{
+    margin-top: 0px;
+    color: white;
+    background-color: black;
+    height: 250px;
+}
+
+header > h1{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0px;
+    font-family: 'Passion One';
+    font-weight: bold;
+    font-size: 5em;
+    text-align: center;
+    padding-top: 10px;
+}
+header > p{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0px;
+    font-family: 'Passion One';
+    font-size: 1em;
+    text-align: center;
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+main p {
+    font-family: 'Sriracha';
+    font-size: 2.3em;
+    text-align: left;
+    padding-left: 20px;
+
+}
+main> section#s1{
+    background-color: white;
+    min-height: 650px;
+    color: black;
+    text-align: left;
+    max-width: 500px;
+    min-width: 200px;
+    margin: 100px 0px 30px ;
+}
+main> section#s2{
+    background: white url('imagens/background001.jpg') center center no-repeat fixed;
+    background-size: cover;
+    min-height: 700px;
+    max-height: 1000px;
+    color: white;
+    padding-top: 100px;
+    padding-left: 20px;
+}
+main> section#s2 > article{
+    background-color: rgba(0, 0, 0, 0.401);
+    max-width: 500px;
+    min-width: 200px;
+    min-height: 475px;
+}
+
+main > section#s3 > article > p{
+    padding-top: 70px;
+}
+
+main > section#s4{
+    background: white url('imagens/background002.jpg') center center no-repeat fixed;
+    background-size: cover;
+    min-height: 700px;
+    max-height: 1000px;
+    color: white;
+    padding-top: 100px;
+    padding-left: 20px;
+}
+main > section#s4 > article{
+    background-color: rgba(0, 0, 0, 0.401);
+    max-width: 500px;
+    min-width: 200px;
+    min-height: 475px;
+}
+
+main > section#s5 {
+    min-height: 1200px;
+    max-height: 1800px;
+}
+main > section#s5 > article> p{
+    padding-top: 70px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    font-weight: lighter;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
