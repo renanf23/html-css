@@ -15,6 +15,16 @@
 }
 body{
     background-image: url('../imagens/ceu-estrelado.png');
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section#principal{
+    height: 450px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 10px;
 }
 
 nav{
@@ -56,11 +66,6 @@ header > p{
 
 main{
    
-    min-width: 300px;
-    max-width: 1000px;
-    margin: auto;
-    margin-bottom: 30px;
-    padding: 10px;
 }
 .janelas{
     background-color: var(--cor0);
@@ -78,7 +83,7 @@ article > h2{
     padding-top: 10px;
 }
 
-article > img {
+section#principal  img {
     display: block;
     margin: auto;
     width: 85%;
@@ -110,4 +115,37 @@ article> a > h3:hover{
     padding-top: 10px;
     font-size: 1.4em;
 }
+ 
+section#sobre{
+    background-color: white;
+    background-image: url('../imagens/photo-1451187580459-43490279c0fa.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 800px;
+    
+    position: relative;
+    
+}
 
+section#sobre p{
+    background-color: rgba(0, 0, 0, 0.394);
+    color: white;
+    font-size: 3vw;
+    display: inline-block;
+    max-width: 650px;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+section#sobre  img{
+    position: absolute;
+    left: 100%;
+    top: 100%;
+
+    transform: translate(-100%, -100%);
+}
+section#contato{
+    height: 800px;
+}
