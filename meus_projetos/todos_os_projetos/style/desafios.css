@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'tecno';
-    src: url(../todos_os_projetos/fontes/Seven\ Segment.ttf);
+    src: url(../fontes/Seven\ Segment.ttf);
 }
 
 *{
@@ -15,7 +15,7 @@
 }
 
 body{
-    background-image: url('../todos_os_projetos/imagens/ceu-estrelado.png');
+    background-image: url('../imagens/ceu-estrelado.png');
 }
 
 nav{
@@ -77,7 +77,7 @@ article > a > h3  {
     margin: auto;
     margin-top: 15px;
     text-align: center;
-    background-image: url('../todos_os_projetos/imagens/ceu-estrelado.png');
+    background-image: url('../imagens/ceu-estrelado.png');
     width:90px;
     height: 27px;
     padding-top: 8px;
