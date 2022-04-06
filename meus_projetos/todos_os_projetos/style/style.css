@@ -20,14 +20,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-section#principal{
-    height: 450px;
-    min-width: 300px;
-    max-width: 1000px;
-    margin: auto;
-    margin-bottom: 30px;
-    padding: 10px;
-}
 
 nav{
     padding: 10px;
@@ -70,53 +62,55 @@ main{
     padding: 20px;
    
 }
-.janelas{
+
+h2{
+    text-align: center;
+    font-family: 'tecno';
+    padding-top: 10px;
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+h3{
+    font-size: 1.6em;
+}
+
+section#principal{
     background-color: var(--cor0);
-    height: 300px;
-    width: 300px;
-    margin: 15px;
-    display: inline-block;
+    height: 600px;
+    min-width: 300px;
+    max-width: 500px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 100px;
+
     border-radius: 75px;
     box-shadow: 4px 2px  rgb(0, 39, 11);
 }
 
- h2{
-    text-align: center;
-    font-family: 'tecno';
-    padding-top: 10px;
+article{
+    background-color: white;
+    max-width: 400px;
+    height: 450px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+
 }
 
-section#principal  img {
-    display: block;
-    margin: auto;
-    width: 85%;
+article ul{
+    padding: 15px;
+    font-size: 1.5em;
+    line-height: 1.5em;
 }
 
-article > a >  h3  {
-    margin: auto;
-    margin-top: 15px;
-    text-align: center;
-    background-image: url('../imagens/ceu-estrelado.png');
-    width:90px;
-    height: 27px;
-    padding-top: 8px;
-    border-radius: 5px;
-    color: var(--cor0);
-    transition-duration: 0.7s;
-    font-family: 'tecno';
-    box-shadow: 2px 2px  rgba(0, 0, 0, 0.476);
-}
-article > a{
+a{
     text-decoration: none;
-    color: var(--cor0);
+    color: black;
 }
-
-article> a > h3:hover{
-    width:110px;
-    height: 32px;
-    margin-top: 10px;
-    padding-top: 10px;
-    font-size: 1.4em;
+a:hover{
+    color: var(--cor0);
+    text-decoration: underline;
 }
  
 section#sobre{
@@ -143,14 +137,12 @@ section#sobre p{
     max-width: 650px;
     margin-top: 100px;
     margin-left: 30px;
+    padding: 10px;
 
     position: absolute;
     left: 51%;
 }
 
-section#sobre  img{
-
-}
 aside{
     height: 800px;
     position: relative;
@@ -169,7 +161,7 @@ aside{
     padding: 10px;
 }
 
-ul{
+aside ul{
     background-color: white;
     margin: auto;
     min-width: 300px;
@@ -180,12 +172,12 @@ ul{
     font-size: 2vw;
     border-radius: 20px;
 }
-ul a{
+aside ul a{
     text-decoration:  none;
     color: black;
 }
 
-ul a:hover{
+aside ul a:hover{
     color: var(--cor0);
 }
 
