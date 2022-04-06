@@ -104,11 +104,12 @@ article ul{
     line-height: 1.5em;
 }
 
-a{
+article a{
     text-decoration: none;
     color: black;
 }
-a:hover{
+
+article a:hover{
     color: var(--cor0);
     text-decoration: underline;
 }
