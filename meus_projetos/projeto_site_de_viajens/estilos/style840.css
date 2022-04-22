@@ -97,6 +97,7 @@ section #painel{
 #primeira_s h2{
     font-weight: normal;
     padding: 20px;
+    padding-left: 40px;
     padding-top: 30px;
     font-size: 24px;
 }
@@ -104,12 +105,12 @@ section #painel{
 #primeira_s .busca{
     display: inline-block;
     padding-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-top: 0px;
 
 }
 #primeira_s .busca input{
-    width:357px;
+    width:310px;
     height:35px;
     margin: 0px;
     text-indent: 10px;
@@ -117,7 +118,7 @@ section #painel{
 }
 
 #primeira_s #procurar{
-    margin: 10px 0px 40px 20px;
+    margin: 10px 0px 40px 40px;
     background-color: rgb(105, 105, 105);
     color: white;
     font-size: 0.9em;
@@ -125,18 +126,18 @@ section #painel{
 
 }
 #segunda_s h2{
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 #segunda_s h3{
     padding-bottom: 15px;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 main #ftprincipal{
     background-image: url(../imagens/cinqueterre.jpg);
-    width: 350px;
-    height: 300px;
+    width: 310px;
+    height: 260px;
     background-size: cover;
     background-repeat: no-repeat;
     margin: auto;
@@ -155,8 +156,8 @@ main #ftprincipal p{
 }
 
 main .menores{
-    width: 350px;
-    height: 300px;
+    width: 310px;
+    height: 260px;
     background-color: red;
     margin: auto;
     margin-bottom: 20px;
@@ -192,7 +193,7 @@ main .m4{
 main .natureza{
     background-color: white;
     padding-bottom: 20px;
-    width: 350px;
+    width: 310px;
     margin: auto;
     margin-bottom: 20px;
     
@@ -210,21 +211,19 @@ main .natureza p{
 .preco{
     color: rgb(158, 158, 158);
 }
-main .nat1{
-    margin-right: 20px;
-}
+
 main .natureza a {
     padding: 15px;
 
 }
 
 #segunda_s img{
-    width: 350px;
+    width: 310px;
     margin: auto;
 }
 
 main #terceira_s{
-    width: 825px;
+    width: 310px;
     margin: auto;
     padding-top: 35px;
 }
@@ -244,7 +243,7 @@ main #inscricao p{
 }
 
 main #seuemail{
-    width: 800px;
+    width: 285px;
     height: 30px;
     text-indent: 8px;
     margin-bottom: 12px;
@@ -268,7 +267,7 @@ main #inscrever{
 }
 
 #contato .text{
-    width: 820px;
+    width:310px;
     height: 40px;
     margin: 10px 0px;
     text-indent: 8px;
