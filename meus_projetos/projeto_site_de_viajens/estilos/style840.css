@@ -63,7 +63,7 @@ section #painel{
     background-color: white;
 
     height: 320px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .seletores{
@@ -96,7 +96,7 @@ section #painel{
 
 #primeira_s h2{
     font-weight: normal;
-    padding: 17px;
+    padding: 20px;
     padding-top: 30px;
     font-size: 24px;
 }
@@ -104,7 +104,7 @@ section #painel{
 #primeira_s .busca{
     display: inline-block;
     padding-bottom: 10px;
-    margin-left: 17px;
+    margin-left: 20px;
     margin-top: 0px;
 
 }
@@ -117,19 +117,20 @@ section #painel{
 }
 
 #primeira_s #procurar{
-    margin: 10px 0px 40px 17px;
+    margin: 10px 0px 40px 20px;
     background-color: rgb(105, 105, 105);
     color: white;
     font-size: 0.9em;
     padding: 10px;
+
+}
+#segunda_s h2{
+    padding-left: 20px;
 }
 
-main #lugares {
-    width: 100%;
-    margin: auto;
-}
 #segunda_s h3{
     padding-bottom: 15px;
+    padding-left: 20px;
 }
 
 main #ftprincipal{
@@ -196,6 +197,7 @@ main .natureza{
 }
 main .natureza h2{
     padding: 10px;
+
 }
 main .natureza p{
     padding: 10px;
