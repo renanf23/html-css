@@ -64,6 +64,13 @@ section #painel{
 
     height: 320px;
     margin-bottom: 40px;
+    margin: auto;
+}
+
+#painelb {
+    margin: auto;
+    width: 310px;
+
 }
 
 .seletores{
@@ -96,16 +103,12 @@ section #painel{
 
 #primeira_s h2{
     font-weight: normal;
-    padding: 20px;
-    padding-left: 40px;
     padding-top: 30px;
     font-size: 24px;
 }
 
 #primeira_s .busca{
-    display: inline-block;
     padding-bottom: 10px;
-    margin-left: 40px;
     margin-top: 0px;
 
 }
@@ -118,7 +121,7 @@ section #painel{
 }
 
 #primeira_s #procurar{
-    margin: 10px 0px 40px 40px;
+    margin: 10px 0px 40px 0px;
     background-color: rgb(105, 105, 105);
     color: white;
     font-size: 0.9em;
@@ -126,12 +129,14 @@ section #painel{
 
 }
 #segunda_s h2{
-    padding-left: 40px;
+    width: 310px;
+    margin: auto;
 }
 
 #segunda_s h3{
     padding-bottom: 15px;
-    padding-left: 40px;
+    width: 310px;
+    margin: auto;
 }
 
 main #ftprincipal{
