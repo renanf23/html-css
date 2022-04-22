@@ -62,7 +62,7 @@ h3{
 section #painel{
     background-color: white;
 
-    height: 300px;
+    height: 320px;
 }
 
 .seletores{
@@ -108,7 +108,7 @@ section #painel{
 
 }
 #primeira_s .busca input{
-    width:248px;
+    width:357px;
     height:35px;
     margin: 0px;
     text-indent: 10px;
