@@ -228,7 +228,7 @@ main #terceira_s{
 
 main #inscricao{
     background-color: rgb(84, 84, 84);
-    color: white;
+    color: red;
     padding: 10px;
 }
 main #inscricao h2{
