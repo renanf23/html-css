@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../projeto_site_de_viajens/imagens/">
     <title>Viagens</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="(max-width:840px)" href="estilos/style840.css" />
+    <link rel="stylesheet" media="(max-width: 1150px) and (min-width: 840px)" href="estilos/style1150.css" />
+    <link rel="stylesheet" media="(min-width: 1150px)" href="estilos/style.css" />
 </head>
 <body>
     <header>
@@ -26,13 +27,13 @@
                 </ul>
                 <h2>Travel the world with us</h2>
                 <div class="busca">
-                    From <br>
+                    <h3>From</h3>
                     <input type="search" name="" id="" placeholder="Departing from">
                 </div>
                 <div class="busca">
-                    To <br>
+                    <h3>To</h3>
                     <input type="search" name="" id="" placeholder="Arriving at">
-                </div>
+                </div><br>
                 <input type="button" value="Search and find dates" id="procurar">
             </div>
         </section>
@@ -40,7 +41,7 @@
             <div id="lugares">
                 <h2>Good Offers Right Now</h2>
                 <h3>Up to <strong>50%</strong> discount.</h3>
-                <div id="principal" class="imagens">
+                <div id="ftprincipal" class="imagens">
                     <p>Cinque Terre</p>
                 </div>
                 <div id="outros">
