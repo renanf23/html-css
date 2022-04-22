@@ -231,7 +231,7 @@ main #terceira_s{
 
 main #inscricao{
     background-color: rgb(84, 84, 84);
-    color: red;
+    color: white;
     padding: 10px;
 }
 main #inscricao h2{
@@ -251,7 +251,7 @@ main #seuemail{
 }
 main #inscrever{
     background-color: rgb(247, 96, 96);
-    color: blue;
+    color: white;
     padding: 10px 16px ;
     margin-bottom: 8px;
 }
