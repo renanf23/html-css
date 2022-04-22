@@ -190,9 +190,11 @@ main .m4{
 }
 
 main .natureza{
-    display: inline-block;
     background-color: white;
     padding-bottom: 20px;
+    width: 350px;
+    margin: auto;
+    margin-bottom: 20px;
     
 }
 main .natureza h2{
@@ -217,7 +219,8 @@ main .natureza a {
 }
 
 #segunda_s img{
-    width: 400px;
+    width: 350px;
+    margin: auto;
 }
 
 main #terceira_s{
