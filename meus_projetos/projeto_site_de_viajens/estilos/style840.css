@@ -37,7 +37,7 @@ h3{
     font-size: 20px;
     text-align: justify;
     height: 50px;
-    max-width: 450px;
+    width: 100%;
     margin: auto;
 
 }
@@ -211,7 +211,7 @@ main .natureza p{
     padding: 10px;
     font-size: 15px;
     text-align: justify;
-    max-width: 300px;
+    width: 260px;
 }
 .preco{
     color: rgb(158, 158, 158);
