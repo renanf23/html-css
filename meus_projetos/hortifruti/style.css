@@ -169,6 +169,7 @@ main .cat {
     margin: auto;
     border-radius: 5px;
     line-height: 20px;
+    cursor: pointer;
 }
 main .cat p{
     display: inline;
@@ -191,11 +192,13 @@ main .itens{
 
 main .frutas{
     width: 200px;
-    height: 300px;
-    border: 1px solid gray;
+    border: 1px solid rgba(128, 128, 128, 0.232);
     border-radius: 5px;
     padding: 10px;
 
+}
+.frutas .descricao{
+    margin-bottom: 50px;
 }
 .frutas img{
     width: 150px;
@@ -216,4 +219,28 @@ main .frutas{
     font-size: 0.7em;
     margin-left: 10px;
     margin-top: 3px;
+}
+.preco p{
+    font-size: 1.1em;
+    font-family: var(--font3);
+}
+.preco span{
+    font-size: 0.5em;
+}
+.frutas input{
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    display: block;
+    color: var(--cor4);
+    background-color: #eef9f5;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.frutas input:hover{
+    background-color: var(--cor4);
+    color: white;
 }
