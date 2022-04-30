@@ -152,6 +152,7 @@ main .conteudo{
     display: flex;
     align-items: flex-start;
 }
+
 main .categorias{
 
     width: 250px;
@@ -183,17 +184,23 @@ main .cat strong{
     font-size: 1.2em;
 
 }
+main .titens{
+    max-width: 1000px;
+
+}
 
 main .itens{
-    width: 1000px;
-    height: 500px;
-    padding: 40px;
+    width: 180px;
+    padding: 20px;
+    margin-right: 15px;
+    display: inline-block;
 }   
 
 main .frutas{
     width: 200px;
     border: 1px solid rgba(128, 128, 128, 0.232);
     border-radius: 5px;
+    box-shadow: 1px 1px rgba(128, 128, 128, 0.211);
     padding: 10px;
 
 }
@@ -202,6 +209,7 @@ main .frutas{
 }
 .frutas img{
     width: 150px;
+    height: 150px;
     margin: auto;
     display: block;
     margin-bottom: 15px;
