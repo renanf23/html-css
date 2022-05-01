@@ -1,5 +1,5 @@
 let conteudo = document.getElementsByClassName("titens")[0]
-
+let janela = document.getElementById('carrinho')
 //TODOS OS PRODUTOS
 produtos= [
     maca= {nome: 'Maçã',preco: 3.19, tipo:'Kg', peso:'140g'},
@@ -32,4 +32,12 @@ for (let pos in produtos){
     </div>
     <input type="button" value="Adicionar">`
     conteudo.appendChild(item)
+}
+
+function comprar() {
+    janela.innerHTML= '<p>foi</p>'
+}
+
+function sair(){
+    janela.innerHTML= '<p><i class="fa-solid fa-cart-shopping"></i></p>'
 }
