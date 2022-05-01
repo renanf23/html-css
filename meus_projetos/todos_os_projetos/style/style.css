@@ -113,7 +113,12 @@ article a:hover{
     color: var(--cor0);
     text-decoration: underline;
 }
- 
+#principal ul p{
+    display: inline-block;
+    font-size: 0.5em;
+    vertical-align: super;
+
+}
 section#sobre{
     background-color: white;
     background-image: url('../imagens/html.jpg');
