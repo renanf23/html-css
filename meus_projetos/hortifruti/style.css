@@ -235,8 +235,19 @@ main .frutas{
 }
 .preco span{
     font-size: 0.5em;
+    
 }
-.frutas input{
+.frutas .number{
+    width: 50px;
+    height: 25px;
+    margin: auto;
+    display:block;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.2em;
+}
+.frutas .button{
     width: 150px;
     height: 40px;
     margin: auto;
@@ -249,7 +260,7 @@ main .frutas{
     margin-bottom: 10px;
     cursor: pointer;
 }
-.frutas input:hover{
+.frutas .button:hover{
     background-color: var(--cor4);
     color: white;
 }
@@ -307,8 +318,11 @@ main .carrinho{
     display: inline-block;
     margin: 20px 0px 0px 40px;
     color: var(--cor5);
-    width: 70px;
     font-family: var(--font3);
+}
+.carrinho span{
+    display: inline-block;
+    width: 180px;
 }
 .carrinho i{
     color: red;

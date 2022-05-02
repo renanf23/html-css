@@ -3,7 +3,7 @@ let teste = document.getElementById('teste')
 let janela = document.getElementsByClassName('iconc')[0]
 //TODOS OS PRODUTOS
 produtos= [
-    pmaca= {nome: 'Maçã',preco: 3.19, tipo:'Kg', peso:'140g',item: 1},
+    pmaca= {nome: 'Maçã',preco: 3.19, tipo:'Kg', peso:'140g',item: 1, quantpeso: 0 },
     plaranja= {nome:'Laranja', preco: 4.99, tipo:'Kg', peso:'250g',item: 2}, 
     pbanana={nome:'Banana', preco: 3.25, tipo:'Kg', peso:'200g',item: 3},
     pmamao={nome:'Mamão', preco: 7.14, tipo:'Unidade', peso:'650g',item: 4},
@@ -34,53 +34,66 @@ for (let pos in produtos){
     <div class="preco">
         <p><strong>R$${produtos[pos].preco}<span>/${produtos[pos].tipo}</span></strong></p>
     </div>
-    <input type="button" value="Adicionar"  onclick=adicionar('${produtos[pos].item}')>`
+    <input type="number" inputmode="numeric" class="number" id="quantidade${produtos[pos].item}" placeholder="Kg">
+    <input type="button" class="button" " value="Adicionar"  onclick=adicionar('${produtos[pos].item}')>`
     conteudo.appendChild(item)
 }
 let carrinhov = []
 
 function adicionar(n){
-   
+    let quantidade = document.getElementById(`quantidade${n}`)
     switch (Number(n)){
         case 1:
-            carrinhov.push(pmaca)
+            let maca = {nome: 'Maça', quantpeso: quantidade.value, valor: quantidade.value*3.19}
+            carrinhov.push(maca)
             break
         case 2:
-            carrinhov.push(plaranja)
+            let laranja = {nome: 'Laranja', quantpeso: quantidade.value, valor: quantidade.value*4.99}
+            carrinhov.push(laranja)
             break
         case 3:
-            carrinhov.push(pbanana)
+            let banana = {nome: 'Banana', quantpeso: quantidade.value, valor: quantidade.value*3.25}
+            carrinhov.push(banana)
             break
         case 4:
-            carrinhov.push(pmamao)
+            let mamao = {nome: 'Mamão', quantpeso: quantidade.value, valor: quantidade.value*7.14}
+            carrinhov.push(mamao)
             break
         case 5:
-            carrinhov.push(pmanga)
+            let manga = {nome: 'Manga', quantpeso: quantidade.value, valor: quantidade.value*3.36}
+            carrinhov.push(manga)
             break
         case 6:
-            carrinhov.push(pabacate)
+            let abacate = {nome: 'Abacate', quantpeso: quantidade.value, valor: quantidade.value*9.49}
+            carrinhov.push(abacate)
             break
         case 7:
-            carrinhov.push(pabacaxi)  
+            let abacaxi = {nome: 'Abacaxi', quantpeso: quantidade.value, valor: quantidade.value*9.99}
+            carrinhov.push(abacaxi)
             break      
         case 8:
-            carrinhov.push(pmaracuja)
+            let maracuja = {nome: 'Maracuja', quantpeso: quantidade.value, valor: quantidade.value*4.99}
+            carrinhov.push(maracuja)
             break
         case 9:
-            carrinhov.push(plimao)
+            let limao = {nome: 'Limão', quantpeso: quantidade.value, valor: quantidade.value*1.50}
+            carrinhov.push(limao)
             break
         case 10:
-            carrinhov.push(ppera)
+            let pera = {nome: 'Pera', quantpeso: quantidade.value, valor: quantidade.value*7.22}
+            carrinhov.push(pera)
             break
         case 11:
-            carrinhov.push(pmelancia)
+            let melancia = {nome: 'Melancia', quantpeso: quantidade.value, valor: quantidade.value*1.50}
+            carrinhov.push(melancia)
             break
         case 12:
-            carrinhov.push(pkiwi)
+            let kiwi = {nome: 'Kiwi', quantpeso: quantidade.value, valor: quantidade.value*2.70}
+            carrinhov.push(kiwi)
             break
         
     }
-
+    quantidade.value=''
     
 }
 function comprar() {
@@ -101,13 +114,14 @@ function comprar() {
         <h2>Meu Carrinho</h2>
         </div>`
         for (item in carrinhov){
-            janela.innerHTML += `<p>${carrinhov[item].nome}</p> <i class="fa-solid fa-trash"></i><br>`
+            janela.innerHTML += `<p><span>${carrinhov[item].nome}</span> ${carrinhov[item].quantpeso}Kg R$${carrinhov[item].valor}</p> <i class="fa-solid fa-trash"></i><br>`
         }
-        janela.innerHTML += ` <div class="total">
+        janela.innerHTML += ` 
+        <div class="total">
         <h3>Total</h3>
         <p>R$00,00</p>
         <input type="button" value="COMPRAR">
-    </div>`
+        </div>`
     }
 
 
