@@ -253,19 +253,18 @@ main .frutas{
     background-color: var(--cor4);
     color: white;
 }
-main .carrinho{
+main .iconc{
     width: 75px;
     height: 75px;
     margin: 0px 0px 10px 40px;
     border-radius: 50%;
-    margin-top: 100px;
     bottom: 30px;
     position: sticky;
     background-color: var(--cor4);
     cursor: pointer;
 
 }
-.carrinho p{
+.iconc p{
     font-size: 1.5em;
     margin: 0px;
     color: white;
@@ -274,4 +273,70 @@ main .carrinho{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+main .carrinho{
+    width: 350px;
+    min-height: 350px;
+    bottom: 30px;
+    position: sticky;
+    box-shadow: 1px 1px 5px #192e5994;
+    border-radius: 10px 10px 3px 3px;
+    margin: 0px 0px 10px 40px;
+    padding: 0px;
+    background-color: white;
+
+}
+.carrinho .tituloc{
+    background-color: var(--cor5);
+    height: 80px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+.carrinho h2{
+    text-align: center;
+    margin-top: 0px;
+    color: white;
+    font-family: var(--font3);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.carrinho p{
+    display: inline-block;
+    margin: 20px 0px 0px 40px;
+    color: var(--cor5);
+    width: 70px;
+    font-family: var(--font3);
+}
+.carrinho i{
+    color: red;
+}
+
+.total h3{
+    display: inline-block;
+    width: 170px;
+    margin-left: 20px;
+}
+.total p{
+    color: black;
+    font-family: var(--font3);
+}
+.total input{
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    display: block;
+    color: var(--cor4);
+    background-color: #eef9f5;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.total input:hover{
+    background-color: var(--cor4);
+    color: white;
 }
