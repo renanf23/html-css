@@ -1,6 +1,8 @@
 let conteudo = document.getElementsByClassName("titens")[0]
 let teste = document.getElementById('teste')
 let janela = document.getElementsByClassName('iconc')[0]
+let contadorcar = document.getElementById('contadoritens')
+let carrinhov = []
 //TODOS OS PRODUTOS
 produtos= [
     pmaca= {nome: 'Maçã',preco: 3.19, tipo:'Kg', peso:'140g',item: 1, quantpeso: 0 },
@@ -16,9 +18,6 @@ produtos= [
     pmelancia={nome:'Melancia', preco: 1.50, tipo:'Kg', peso:'5Kg',item: 11},
     pkiwi={nome:'Kiwi', preco: 2.70, tipo:'Unidade', peso:'135g',item: 12}
 ]
-
-//ENTRADA DOS ITENS
-let maca = document.getElementsByClassName('pmaca')[0]  
 
 conteudo.innerHTML=''
 for (let pos in produtos){
@@ -38,7 +37,6 @@ for (let pos in produtos){
     <input type="button" class="button" " value="Adicionar"  onclick=adicionar('${produtos[pos].item}')>`
     conteudo.appendChild(item)
 }
-let carrinhov = []
 
 function adicionar(n){
     let quantidade = document.getElementById(`quantidade${n}`)
@@ -94,7 +92,7 @@ function adicionar(n){
         
     }
     quantidade.value=''
-    
+    contador()
 }
 function comprar() {
     if(carrinhov.length ==0){
@@ -109,21 +107,22 @@ function comprar() {
         <input type="button" value="COMPRAR">
     </div>`
     }else{
+        let total = 0
         janela.className='carrinho'
         janela.innerHTML= `<div class="tituloc">
         <h2>Meu Carrinho</h2>
         </div>`
         for (item in carrinhov){
-            janela.innerHTML += `<p><span>${carrinhov[item].nome}</span> ${carrinhov[item].quantpeso}Kg R$${carrinhov[item].valor}</p> <i class="fa-solid fa-trash"></i><br>`
+            janela.innerHTML += `<p>${carrinhov[item].nome}<p><span>${carrinhov[item].quantpeso}Kg R$${carrinhov[item].valor.toFixed(2)}</span></p> <i class="fa-solid fa-trash" onclick=excluir(${item})></i><br>`
+            total += carrinhov[item].valor
         }
         janela.innerHTML += ` 
         <div class="total">
         <h3>Total</h3>
-        <p>R$00,00</p>
+        <p><strong>R$${total.toFixed(2)}</strong></p>
         <input type="button" value="COMPRAR">
         </div>`
     }
-
 
 }
 
@@ -131,3 +130,20 @@ function sair(){
     janela.className='iconc'
     janela.innerHTML=`<p><i class="fa-solid fa-cart-shopping"></i></p>`
 }
+
+function excluir(n){
+    carrinhov.splice(Number(n),1)
+    contador()
+}
+function contador(){
+    if(carrinhov.length != 0){
+        let n = carrinhov.length
+        contadorcar.innerHTML=`<a href="#" ><i class="fa-solid fa-cart-shopping"></i> Carrinho <p>${n}</p> </a>`
+    }else{
+       contadorcar.innerHTML= `<a href="#" ><i class="fa-solid fa-cart-shopping"></i> Carrinho Vazio</a>`
+    }
+    
+}
+
+
+
