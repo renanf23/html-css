@@ -77,7 +77,7 @@ h3{
 
 section#principal{
     background-color: var(--cor0);
-    height: 600px;
+    height: 700px;
     min-width: 300px;
     max-width: 500px;
     padding: 10px;
@@ -91,7 +91,7 @@ section#principal{
 article{
     background-color: white;
     max-width: 400px;
-    height: 450px;
+    height: 550px;
     margin: auto;
     padding: 10px;
     border-radius: 20px;
